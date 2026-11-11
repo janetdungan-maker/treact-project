@@ -354,7 +354,11 @@ header .row {
     height: auto;
     flex-direction: column;
     gap: 12px;
+    
   }
+  .header__customers--title {
+  margin-top: 32px;
+}
 
   .header__email--input {
     position: static;
@@ -457,9 +461,14 @@ header .row {
   .feature {
     width: 100%;
   }
-
+@media (max-width: 550px) {
+  #features .section__title {
+    text-align: center;
+  }
+}
   .feature__row {
     padding: 16px 24px;
+    align-items: center;
   }
 }
 
@@ -489,7 +498,12 @@ header .row {
     width: 100%;
   }
 }
-
+@media (max-width: 550px) {
+  #quality .quality__description {
+    padding-right: 0;
+    text-align: center;
+  }
+}
 .section__tag {
   font-size: 16px;
   color: #6415ff;
@@ -718,7 +732,18 @@ img {
 
 /* VALUES - SMALL TABLET */
 @media (max-width: 768px) {
-  /* only put something here IF Values needs another change */
+#values .values__description {
+  align-items: center;
+  text-align: center;
+ }
+
+#values .value {
+  align-items: center;
+  margin-right: 0;
+ }
+  #values .value__para {
+  text-align: center;
+ }
 }
 
 /* VALUES - PHONE */
@@ -907,6 +932,11 @@ img {
   .plans {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  #pricing .section__title {
+    text-align: center;
   }
 }
 .plans {
@@ -1864,6 +1894,11 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  #testimonials .testimonials__description {
+  width: 100%;
+  padding-left: 0;
+  text-align: center;
+  }
   #pricing .row {
     margin-top: 40px;
   }
@@ -1871,7 +1906,7 @@ footer {
 
 @media (max-width: 640px) {
   .container {
-    padding: 80px 0;
+    padding: 24px 0;
   }
   .nav__logo {
     margin: 8px 0;
@@ -1886,6 +1921,50 @@ footer {
   }
   .testimonial__buttons {
     margin-top: 24px;
+    align-self: center;
   }
+  #steps .steps__description {
+  padding-left: 0;
+  text-align: center;
+  }
+  #steps .step {
+  flex-direction: column;
+  align-items: center;
+  }
+  #steps .step__description {
+  margin-left: 0;
+  }
+  #start .start__title,
+  #start .start__buttons {
+  width: 100%;
+ }
+ #start .start__buttons {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+ }
+ #start .start__button {
+  margin: 0;
+ }
+  .footer__bottom {
+  flex-direction: column;
+  gap: 24px;
+ }
+ .footer__socials {
+  margin-left: 0;
+ }
+ .footer__column {
+  width: 33.33%;
+  align-items: center;
+ }
+ .footer__columns {
+  justify-content: center;
+ }
+ .footer__column--link {
+  text-align: center;
+ }
+.footer__column--link {
+  white-space: nowrap;
+ }
 
 }
